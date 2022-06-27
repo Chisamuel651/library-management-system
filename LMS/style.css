@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* text-transform: capitalize; */
+    text-decoration: none;
+}
+
+.error_message{
+    display: block;
+    padding: 12px 18px;
+    background-color: rgb(255, 68, 68);
+    color: #fff;
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    margin-top: -5%;
+    justify-content: center;
+}
+
+.messages span{
+    position: absolute;
+    background-color: var(--default-color);
+    display: inline-block;
+    top: -0.6rem;
+    right: -1rem;
+    border-radius: 50%;
+    padding: 0.1rem 0.8rem;
+    font-weight: 800;
+}
+
+body{
+    background-color: #e6e6e6;
+    text-transform: capitalize;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login_wrapper{
+    position: relative;
+    padding: -15px 18px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+.login_contact{
+    /* justify-content: center;
+    text-align: center;
+    align-items: center; */
+    padding: 5rem 10rem;
+}
+
+.login_contact h2{
+    color: #048888;
+    text-transform: capitalize;
+    margin-bottom: 1.8rem;
+    line-height: 1rem;
+}
+
+.login_contact .inputBox{
+    margin: 1.5rem 1.5rem;
+    position: relative;
+    /* width: 300px; */
+}
+
+.login_contact .inputBox input{
+    /* padding: 0.2rem 2.5rem; */
+    text-align: left;
+    align-items: start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    border: 1px solid #111;
+    padding: 6px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 16px;
+    color: #111;
+}
+
+/* .login_contact div input:hover{
+    border-color: #87fafa;
+} */
+
+.login_contact .inputBox span{
+    /* position: absolute; */
+    top: 1px;
+    left: 1px;
+    padding: 6px;
+    display: inline-block;
+    font-size: 16px;
+    color: #111;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.login_contact .inputBox input:focus ~ span,
+.login_contact .inputBox input:valid ~ span{
+    transform: translateX(-7px) translateY(-22px);
+    font-size: 10px;
+    /* color: #87fafa; */
+}
+
+.form-control{
+    width: 100%;
+}
+
+.login_contact .submit .btn{
+    background-color: #87fafa;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    color: #fff;
+    margin-left: 30%;
+    padding: 12px 30px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.login_contact .new{
+    margin-top: 20px;
+}
